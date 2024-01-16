@@ -6,7 +6,8 @@
 import scrapy
 
 
-class IndeedScraperItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+class Offer(scrapy.Item):
+    url = scrapy.Field()
+    job_name = scrapy.Field()
+    
+    # date = scrapy.Field()
